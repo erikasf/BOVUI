@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Corporate UI Elements</title>		
+		<title>Erika Harvey UI Style Template</title>		
 		<link rel="stylesheet" type="text/css" href="css/screen.css" />
 		<link rel="stylesheet" href="css/uniform.default.css" type="text/css" media="screen" />
 		
@@ -12,10 +12,10 @@
 		<script type='text/javascript' src='js/jquery.snippet.min.js'></script>
 		<script type='text/javascript' src='js/jquery.uniform.min.js'></script>
 		<script type='text/javascript' src='js/jquery-ui-1.8.2.custom.min.js'></script>
-		<script type='text/javascript' src='js/jquery.medialoot-corporate-ui.js'></script>		
+		<script type='text/javascript' src='js/yuitemplate.js'></script>		
 	</head>
 	<body>
-<h1>Corporate UI Elements</h1>
+<h1>BOV UI Style Template</h1>
 	
 <div id="container">
 	
@@ -81,26 +81,26 @@
 			</div>
 		</div>
 		<div id="formelements">
-			<select class="corporate-ui">
+			<select class="bov-ui">
 				<option>One</option>
 				<option>Two</option>
 				<option>Three</option>
 			</select>
-			<fieldset class="corporate-ui-value">
+			<fieldset class="bov-ui-value">
 				<input type="text" value="1" />
-				<span class="value-inc" onclick="increaseValue('.corporate-ui-value');"></span>
-				<span class="value-dec" onclick="decreaseValue('.corporate-ui-value');"></span>
+				<span class="value-inc" onclick="increaseValue('.bov-ui-value');"></span>
+				<span class="value-dec" onclick="decreaseValue('.bov-ui-value');"></span>
 			</fieldset>
 			<input type="checkbox" name="switch1" class="onoffswitch"/>
 			<input type="checkbox" name="switch2" class="onoffswitch" checked="checked"/>
 			<input type="checkbox" name="switch3" class="leftrightswitch"/>
 			<input type="checkbox" name="switch4" class="leftrightswitch" checked="checked"/>
-			<input type="file" class="corporate-ui"/>
-			<input type="radio" name="number" value="1" class="corporate-ui"/>
-			<input type="radio" name="number" value="2" checked="checked" class="corporate-ui"/>
-			<input type="checkbox" name="number" value="1" class="corporate-ui"/>
-			<input type="checkbox" name="number" value="2" checked="checked" class="corporate-ui"/>
-			<fieldset class="corporate-ui-search">
+			<input type="file" class="bov-ui"/>
+			<input type="radio" name="number" value="1" class="bov-ui"/>
+			<input type="radio" name="number" value="2" checked="checked" class="bov-ui"/>
+			<input type="checkbox" name="number" value="1" class="bov-ui"/>
+			<input type="checkbox" name="number" value="2" checked="checked" class="bov-ui"/>
+			<fieldset class="bov-ui-search">
 				<input type="text" value="Search box" name="keywords" onblur="if (this.value == ''){this.value = 'Search box';}" onfocus="if (this.value == 'Search box') {this.value = '';}"/>
 				<input type="submit" value="" class="submit" />
 			</fieldset>
@@ -234,11 +234,11 @@
 	<span class="minimize">-</span>
 	<span class="maximize">+</span>
 	</div>
-	<p>For all of the elements styled here, we use 3 sprites to grab the background images. <strong>Make sure you adjust the relative urls within the CSS to point to these sprites and upload those sprite PNGs to your server or your UI just won't look the same.</strong></p>
+	
 	<div class="docs">
-	<p>We've coded the Corporate UI Elements to be very flexible and powerful, as such, some of them are kind of complicated. Please see the floating navigation to navigate the docs (you can drag it around or minimize it to get it out of your way).</p>
-	<p>If you're using more than one style of an element type, you may find it beneficial to combine some CSS. We've coded it so that it's really simple to just grab the CSS you need, but by all means, compact it if you can/want.</p>
-	<p>Some features in this kit require jQuery, the jQuery Uniform plugin, and/or the jQuery UI plugin. Information on which items require these elements are found in the element's individual docs. Unfortunately, we cannot provide additional customization, but we've coded each element to provide the most flexibility. You can certainly add or adjust the code as needed. We'll try to explain how each set of code works so that you can fiddle on your own.</p>
+	<p>I've coded the bov UI Elements to be very flexible and powerful, as such, some of them are kind of complicated. Please see the floating navigation to navigate the docs (you can drag it around or minimize it to get it out of your way).</p>
+	<p>If you're using more than one style of an element type, you may find it beneficial to combine some CSS. I've coded it so that it's really simple to just grab the CSS you need, but by all means, compact it if you can/want.</p>
+	<p>Some features in this kit require jQuery, the jQuery Uniform plugin, and/or the jQuery UI plugin. Information on which items require these elements are found in the element's individual docs. Unfortunately, I  cannot provide additional customization, but I've coded each element to provide the most flexibility. You can certainly add or adjust the code as needed. I'll try to explain how each set of code works so that you can fiddle on your own.</p>
 	</div>
 	<h3 id="docs-menus">Menus</h3>
 	<div class="docs">
@@ -260,30 +260,30 @@
 /* Menu 1 */
 #menu1{clear: both;width: 960px;height: 46px;margin: 10px;}
 #menu1 ul {list-style-type: none;margin: 0px;padding: 0px;}
-#menu1 ul li{float: left;margin: 0px;padding: 0px 30px;height: 46px;font: bold 13px/46px Arial, Helvetica, Geneva, sans-serif;text-shadow: #fff 0px 2px 0px;background: url(../images/corporate-ui-sprite.png) repeat-x -4px 0;border-right: 2px solid #e5e6e6;}
+#menu1 ul li{float: left;margin: 0px;padding: 0px 30px;height: 46px;font: bold 13px/46px Arial, Helvetica, Geneva, sans-serif;text-shadow: #fff 0px 2px 0px;background: url(../images/bov-ui-sprite.png) repeat-x -4px 0;border-right: 2px solid #e5e6e6;}
 #menu1 ul li a {color: #666666;text-decoration: none;}
 #menu1 ul li.first {background-position: 0 0;}
 #menu1 ul li.last  {background-position: right 0;border-right: none;}
-#menu1 ul li.active, #menu1 ul li:hover {background: url(../images/corporate-ui-sprite.png) repeat-x -4px -47px;}
+#menu1 ul li.active, #menu1 ul li:hover {background: url(../images/bov-ui-sprite.png) repeat-x -4px -47px;}
 #menu1 ul li.first.active, #menu1 ul li.first:hover {background-position: 0px -47px;}
 #menu1 ul li.last.active, #menu1 ul li.last:hover {background-position: right -47px;}
 #menu1 ul li form {width: 218px;float: left;margin: 0px 0px;overflow: visible;}
-#menu1 ul li input {width: 238px;height: 32px;margin: 8px -25px 7px; padding: 0px 0px 0px 30px;background: url(../images/corporate-ui-sprite.png) repeat-x left -197px;border-style: none;color: #908964;text-shadow: #fff 0px 2px 0px;font: bold 13px/32px Arial, Helvetica, Geneva, sans-serif;;
+#menu1 ul li input {width: 238px;height: 32px;margin: 8px -25px 7px; padding: 0px 0px 0px 30px;background: url(../images/bov-ui-sprite.png) repeat-x left -197px;border-style: none;color: #908964;text-shadow: #fff 0px 2px 0px;font: bold 13px/32px Arial, Helvetica, Geneva, sans-serif;;
 }
 
 
 /* Menu 2 */
 #menu2 {clear: both;width: 960px;height: 47px;margin: 10px;}
 #menu2 ul {list-style-type: none;margin: 0px;padding: 0px;}
-#menu2 ul li{float: left;margin: 0px;padding: 1px 30px 0px;height: 47px;font: bold 13px/46px Arial, Helvetica, Geneva, sans-serif;background: url(../images/corporate-ui-sprite.png) repeat-x -4px -94px;text-shadow: #323a44 0px 2px 0px;border-right: 2px solid #565858;}
+#menu2 ul li{float: left;margin: 0px;padding: 1px 30px 0px;height: 47px;font: bold 13px/46px Arial, Helvetica, Geneva, sans-serif;background: url(../images/bov-ui-sprite.png) repeat-x -4px -94px;text-shadow: #323a44 0px 2px 0px;border-right: 2px solid #565858;}
 #menu2 ul li a {color: #fff;text-decoration: none;}
 #menu2 ul li.first {background-position: 0 -94px;}
 #menu2 ul li.last {background-position: right -94px;border-right: none;}
-#menu2 ul li.active, #menu2 ul li:hover {background: url(../images/corporate-ui-sprite.png) repeat-x -4px -143px;}
+#menu2 ul li.active, #menu2 ul li:hover {background: url(../images/bov-ui-sprite.png) repeat-x -4px -143px;}
 #menu2 ul li.first.active, #menu2 ul li.first:hover {background-position: 0px -143px;}
 #menu2 ul li.last.active, #menu2 ul li.last:hover {background-position: right -143px;}
 #menu2 ul li form {width: 218px;float: left;margin: 0px 0px;overflow: visible;}
-#menu2 ul li input {width: 238px;height: 32px;margin: 8px -25px 7px; padding: 0px 0px 0px 30px;background: url(../images/corporate-ui-sprite.png) repeat-x right -197px;border-style: none;color: #fff;text-shadow: #323a44 0px 2px 0px;font: bold 13px/32px Arial, Helvetica, Geneva, sans-serif;}</pre></li>
+#menu2 ul li input {width: 238px;height: 32px;margin: 8px -25px 7px; padding: 0px 0px 0px 30px;background: url(../images/bov-ui-sprite.png) repeat-x right -197px;border-style: none;color: #fff;text-shadow: #323a44 0px 2px 0px;font: bold 13px/32px Arial, Helvetica, Geneva, sans-serif;}</pre></li>
 		</ol>
 	</div>
 	<h3 id="docs-buttons">Buttons</h3>
@@ -292,32 +292,32 @@
 		<pre class="html">&lt;a class="sqbuttons1" href="#"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/a&gt;</pre>
 		<p>Then grab the appropriate CSS:</p>
 		<pre class="css">/* Light Square Buttons/Links */
-a.sqbuttons1 { display: block; height: 36px; width: 100px;margin: 10px;padding: 0px;color: #666666;background: url(../images/corporate-ui-sprite.png) no-repeat left -244px;border-style: none;text-decoration: none;font: bold 12px/36px Arial, Helvetica, Geneva, sans-serif;text-align: center;text-shadow: #fff 0 2px 0;}
-a.sqbuttons1 span {display: block;margin-left: 2%;width: 99%;height: 100%;background: url(../images/corporate-ui-sprite.png) no-repeat right -244px;}
+a.sqbuttons1 { display: block; height: 36px; width: 100px;margin: 10px;padding: 0px;color: #666666;background: url(../images/bov-ui-sprite.png) no-repeat left -244px;border-style: none;text-decoration: none;font: bold 12px/36px Arial, Helvetica, Geneva, sans-serif;text-align: center;text-shadow: #fff 0 2px 0;}
+a.sqbuttons1 span {display: block;margin-left: 2%;width: 99%;height: 100%;background: url(../images/bov-ui-sprite.png) no-repeat right -244px;}
 a.sqbuttons1.hover, a.sqbuttons1:hover {background-position: left -281px;}
 a.sqbuttons1.hover span, a.sqbuttons1:hover span {background-position: right -281px;}
 a.sqbuttons1.visited, a.sqbuttons1:visited, a.sqbuttons1:active {background-position: left -318px;}
 a.sqbuttons1.visited span, a.sqbuttons1:visited span, a.sqbuttons1:active span {background-position: right -318px;}
 
 /* Light Arrow Buttons/Links */
-a.arwbuttons1 { display: block; height: 36px; width: 100px;margin: 10px;padding: 0px 0px 0px 16px;color: #666666;background: url(../images/corporate-ui-sprite.png) no-repeat left -356px;border-style: none;text-decoration: none;font: bold 12px/36px Arial, Helvetica, Geneva, sans-serif;text-align: center;text-shadow: #fff 0 2px 0;}
-a.arwbuttons1 span {display: block;margin-left: 2%;width: 99%;height: 100%;background: url(../images/corporate-ui-sprite.png) no-repeat right -356px;}
+a.arwbuttons1 { display: block; height: 36px; width: 100px;margin: 10px;padding: 0px 0px 0px 16px;color: #666666;background: url(../images/bov-ui-sprite.png) no-repeat left -356px;border-style: none;text-decoration: none;font: bold 12px/36px Arial, Helvetica, Geneva, sans-serif;text-align: center;text-shadow: #fff 0 2px 0;}
+a.arwbuttons1 span {display: block;margin-left: 2%;width: 99%;height: 100%;background: url(../images/bov-ui-sprite.png) no-repeat right -356px;}
 a.arwbuttons1.hover, a.arwbuttons1:hover {background-position: left -393px;}
 a.arwbuttons1.hover span, a.arwbuttons1:hover span {background-position: right -393px;}
 a.arwbuttons1.visited, a.arwbuttons1:visited, a.arwbuttons1:active {background-position: left -430px;}
 a.arwbuttons1.visited span, a.arwbuttons1:visited span, a.arwbuttons1:active span {background-position: right -430px;}
 
 /*Dark Square Buttons/Links */
-a.sqbuttons2 { display: block; height: 36px; width: 100px;margin: 10px;padding: 0px;color: #fff;background: url(../images/corporate-ui-sprite.png) no-repeat left -510px;border-style: none;text-decoration: none;font: bold 12px/36px Arial, Helvetica, Geneva, sans-serif;text-align: center;text-shadow: #323a44 0 2px 0;}
-a.sqbuttons2 span {display: block;margin-left: 2%;width: 99%;height: 100%;background: url(../images/corporate-ui-sprite.png) no-repeat right -470px;}
+a.sqbuttons2 { display: block; height: 36px; width: 100px;margin: 10px;padding: 0px;color: #fff;background: url(../images/bov-ui-sprite.png) no-repeat left -510px;border-style: none;text-decoration: none;font: bold 12px/36px Arial, Helvetica, Geneva, sans-serif;text-align: center;text-shadow: #323a44 0 2px 0;}
+a.sqbuttons2 span {display: block;margin-left: 2%;width: 99%;height: 100%;background: url(../images/bov-ui-sprite.png) no-repeat right -470px;}
 a.sqbuttons2.hover, a.sqbuttons2:hover {background-position: left -510px;}
 a.sqbuttons2.hover span, a.sqbuttons2:hover span {background-position: right -510px;}
 a.sqbuttons2.visited, a.sqbuttons2:visited, a.sqbuttons2:active {background-position: left -550px;}
 a.sqbuttons2.visited span, a.sqbuttons2:visited span, a.sqbuttons2:active span {background-position: right -550px;}
 
 /* Light Arrow Buttons/Links */
-a.arwbuttons2 { display: block; height: 36px; width: 100px;margin: 10px;padding: 0px 0px 0px 16px;color: #fff;background: url(../images/corporate-ui-sprite.png) no-repeat left -590px;border-style: none;text-decoration: none;font: bold 12px/36px Arial, Helvetica, Geneva, sans-serif;text-align: center;text-shadow: #323a44 0 2px 0;}
-a.arwbuttons2 span {display: block;margin-left: 2%;width: 99%;height: 100%;background: url(../images/corporate-ui-sprite.png) no-repeat right -590px;}
+a.arwbuttons2 { display: block; height: 36px; width: 100px;margin: 10px;padding: 0px 0px 0px 16px;color: #fff;background: url(../images/bov-ui-sprite.png) no-repeat left -590px;border-style: none;text-decoration: none;font: bold 12px/36px Arial, Helvetica, Geneva, sans-serif;text-align: center;text-shadow: #323a44 0 2px 0;}
+a.arwbuttons2 span {display: block;margin-left: 2%;width: 99%;height: 100%;background: url(../images/bov-ui-sprite.png) no-repeat right -590px;}
 a.arwbuttons2.hover, a.arwbuttons2:hover {background-position: left -630px;}
 a.arwbuttons2.hover span, a.arwbuttons2:hover span {background-position: right -630px;}
 a.arwbuttons2.visited, a.arwbuttons2:visited, a.arwbuttons2:active {background-position: left -670px;}
@@ -329,12 +329,12 @@ a.arwbuttons2.visited span, a.arwbuttons2:visited span, a.arwbuttons2:active spa
 	<pre class="html">&lt;a href="#" class="download1"&gt;Download Now&lt;/a&gt;</pre>
 	<p>Then add appropriate CSS to your stylesheet:</p>
 	<pre class="css">/* Light Download Buttons */
-	.download1 {display: block;width: 232px;height: 53px;text-decoration: none;background: url(../images/corporate-ui-sprite2.png) left 0;text-indent: 65px;text-align: center;color: #666666;font: bold 17px/52px Arial, Helvetica, Geneva, sans-serif;text-shadow: #fff 0 2px 0;}
+	.download1 {display: block;width: 232px;height: 53px;text-decoration: none;background: url(../images/bov-ui-sprite2.png) left 0;text-indent: 65px;text-align: center;color: #666666;font: bold 17px/52px Arial, Helvetica, Geneva, sans-serif;text-shadow: #fff 0 2px 0;}
 	.download1.hover, .download1:hover {background-position: left -56px;}
 	.download1.visited, .download1:active, .download1:visited {background-position: left -112px;}
 	
 	/* Dark Download Buttons */
-	.download2 {display: block;width: 232px;height: 53px;text-decoration: none;background: url(../images/corporate-ui-sprite2.png) right 0;text-indent: 65px;text-align: center;color: #fff;font: bold 17px/52px Arial, Helvetica, Geneva, sans-serif;text-shadow: #323a44 0 2px 0;}
+	.download2 {display: block;width: 232px;height: 53px;text-decoration: none;background: url(../images/bov-ui-sprite2.png) right 0;text-indent: 65px;text-align: center;color: #fff;font: bold 17px/52px Arial, Helvetica, Geneva, sans-serif;text-shadow: #323a44 0 2px 0;}
 	.download2.hover, .download2:hover {background-position: right -56px;}
 	.download2.visited, .download2:active, .download2:visited {background-position: right -112px;}
 	</pre>
@@ -348,13 +348,13 @@ a.arwbuttons2.visited span, a.arwbuttons2:visited span, a.arwbuttons2:active spa
 &lt;div class="progress2"&gt;&lt;span class="status"&gt;&lt;/span&gt;&lt;/div&gt;</pre></li>
 	<li>Then grab the associated CSS:
 	<pre class="css">/* Grey Progress Bar */
-.progress1 {width: 300px;height: 17px;display: block;position: relative;background: url(../images/corporate-ui-sprite.png) 0 -715px;}
-.progress1 span.status {display: block;position: absolute;background: url(../images/corporate-ui-sprite.png) 0 -734px;width: 190px;height: 17px;top: 0;left: 0;
+.progress1 {width: 300px;height: 17px;display: block;position: relative;background: url(../images/bov-ui-sprite.png) 0 -715px;}
+.progress1 span.status {display: block;position: absolute;background: url(../images/bov-ui-sprite.png) 0 -734px;width: 190px;height: 17px;top: 0;left: 0;
 }
 
 /* Blue Progress Bar */
-.progress2 {width: 300px;height: 17px;display: block;position: relative;background: url(../images/corporate-ui-sprite.png) 0 -715px;}
-.progress2 span.status {display: block;position: absolute;background: url(../images/corporate-ui-sprite.png) 0 -752px;width: 230px;height: 17px;top: 0;left: 0;
+.progress2 {width: 300px;height: 17px;display: block;position: relative;background: url(../images/bov-ui-sprite.png) 0 -715px;}
+.progress2 span.status {display: block;position: absolute;background: url(../images/bov-ui-sprite.png) 0 -752px;width: 230px;height: 17px;top: 0;left: 0;
 }</pre></li>
 	</ol>
 	</div>
@@ -386,32 +386,32 @@ a.arwbuttons2.visited span, a.arwbuttons2:visited span, a.arwbuttons2:active spa
 &lt;script type='text/javascript' src='js/jquery-ui-1.8.2.custom.min.js'&gt;&lt;/script&gt;</pre></li>
 	<li>Grab appropriate CSS depending on which styles you'll be using:
 		<pre class="css">/* Grey Slider */
-#slider1.ui-slider { position: relative; width: 300px;height: 10px;text-align: left; 	background: url(../images/corporate-ui-sprite.png) 0 -770px;
+#slider1.ui-slider { position: relative; width: 300px;height: 10px;text-align: left; 	background: url(../images/bov-ui-sprite.png) 0 -770px;
 border-style: none;}
-#slider1.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 32px; height: 10px; cursor: default; 	top:0px;border-style: none;background: url(../images/corporate-ui-sprite.png) no-repeat -527px -812px; margin-left: -16px;}
-#slider1 .sliderstatus {display: block;position: absolute;background: url(../images/corporate-ui-sprite.png) 0 -780px;height: 10px;top: 0px;left: 0;}
+#slider1.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 32px; height: 10px; cursor: default; 	top:0px;border-style: none;background: url(../images/bov-ui-sprite.png) no-repeat -527px -812px; margin-left: -16px;}
+#slider1 .sliderstatus {display: block;position: absolute;background: url(../images/bov-ui-sprite.png) 0 -780px;height: 10px;top: 0px;left: 0;}
 
 /* Blue Slider */
-#slider2.ui-slider { position: relative; width: 300px;height: 10px;text-align: left; 	background: url(../images/corporate-ui-sprite.png) 0 -770px;
+#slider2.ui-slider { position: relative; width: 300px;height: 10px;text-align: left; 	background: url(../images/bov-ui-sprite.png) 0 -770px;
 border-style: none;}
-#slider2.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 32px; height: 10px; cursor: default; 	top:0px;border-style: none;background: url(../images/corporate-ui-sprite.png) no-repeat -527px -812px; margin-left: -16px;}
-#slider2 .sliderstatus {display: block;position: absolute;background: url(../images/corporate-ui-sprite.png) 0 -793px;height: 10px;top: 0px;left: 0;}
+#slider2.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 32px; height: 10px; cursor: default; 	top:0px;border-style: none;background: url(../images/bov-ui-sprite.png) no-repeat -527px -812px; margin-left: -16px;}
+#slider2 .sliderstatus {display: block;position: absolute;background: url(../images/bov-ui-sprite.png) 0 -793px;height: 10px;top: 0px;left: 0;}
 
 /* Grey Double Slider */
-#slider3.ui-slider { position: relative; width: 300px;height: 12px;text-align: left; 	background: url(../images/corporate-ui-sprite.png) 0 -770px;
+#slider3.ui-slider { position: relative; width: 300px;height: 12px;text-align: left; 	background: url(../images/bov-ui-sprite.png) 0 -770px;
 border-style: none;}
-#slider3.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 16px; height: 15px; cursor: default; 	top:-2px;border-style: none;background: url(../images/corporate-ui-sprite.png) no-repeat -390px -812px; margin-left: -8px;}
-#slider3 .sliderstatus {display: block;position: absolute;background: url(../images/corporate-ui-sprite.png) 0 -780px;height: 10px;top: 0px;left: 0;}
+#slider3.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 16px; height: 15px; cursor: default; 	top:-2px;border-style: none;background: url(../images/bov-ui-sprite.png) no-repeat -390px -812px; margin-left: -8px;}
+#slider3 .sliderstatus {display: block;position: absolute;background: url(../images/bov-ui-sprite.png) 0 -780px;height: 10px;top: 0px;left: 0;}
 #slider3 #slider3start {z-index: 5;width: 300px;height: 10px;}
-#slider3start .sliderstatusstart {display: block;position: absolute;background: url(../images/corporate-ui-sprite.png) 0 -872px;height: 10px;top: 0px;left: 0;}
+#slider3start .sliderstatusstart {display: block;position: absolute;background: url(../images/bov-ui-sprite.png) 0 -872px;height: 10px;top: 0px;left: 0;}
 
 /* Blue Double Slider */
-#slider4.ui-slider { position: relative; width: 300px;height: 12px;text-align: left; 	background: url(../images/corporate-ui-sprite.png) 0 -770px;
+#slider4.ui-slider { position: relative; width: 300px;height: 12px;text-align: left; 	background: url(../images/bov-ui-sprite.png) 0 -770px;
 border-style: none;}
-#slider4.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 16px; height: 15px; cursor: default; 	top:-2px;border-style: none;background: url(../images/corporate-ui-sprite.png) no-repeat -390px -812px; margin-left: -8px;}
-#slider4 .sliderstatus {display: block;position: absolute;background: url(../images/corporate-ui-sprite.png) 0 -793px;height: 10px;top: 0px;left: 0;}
+#slider4.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 16px; height: 15px; cursor: default; 	top:-2px;border-style: none;background: url(../images/bov-ui-sprite.png) no-repeat -390px -812px; margin-left: -8px;}
+#slider4 .sliderstatus {display: block;position: absolute;background: url(../images/bov-ui-sprite.png) 0 -793px;height: 10px;top: 0px;left: 0;}
 #slider4 #slider3start {z-index: 5;width: 300px;height: 10px;}
-#slider4start .sliderstatusstart {display: block;position: absolute;background: url(../images/corporate-ui-sprite.png) 0 -872px;height: 10px;top: 0px;left: 0;}</pre></li>
+#slider4start .sliderstatusstart {display: block;position: absolute;background: url(../images/bov-ui-sprite.png) 0 -872px;height: 10px;top: 0px;left: 0;}</pre></li>
 	<li>Interact with jQuery and the jQuery UI plugin with the following javascript code. For single sliders do this inside your document ready function (make sure that variable has your actual ID in it):
 		<pre class="html">// Need this - one for each slider - fill in var thisSlider with id of slider div
 var thisSlider = '#slider1';
@@ -484,19 +484,19 @@ $(thisSlider).slider({
 &lt;script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js'&gt;&lt;/script&gt;
 &lt;script type='text/javascript' src='js/jquery.uniform.min.js'&gt;&lt;/script&gt;
 </pre></li>
-	<li>Create your forms however you want them. Be sure to add a class to them if you want to differentiate the style of only these items and not all form items on your page. For example, on this demo, we don't want this styling to apply to the quantity input or to our switch checkboxes, so we put a class of corporate-ui on the items we do want styled so we can tell jQuery/Uniform that we only want those items styled. Here's an example:
-	<pre class="html">&lt;select class="corporate-ui"&gt;
+	<li>Create your forms however you want them. Be sure to add a class to them if you want to differentiate the style of only these items and not all form items on your page. For example, on this demo, we don't want this styling to apply to the quantity input or to our switch checkboxes, so we put a class of bov-ui on the items we do want styled so we can tell jQuery/Uniform that we only want those items styled. Here's an example:
+	<pre class="html">&lt;select class="bov-ui"&gt;
 &lt;option&gt;One&lt;/option&gt;
 &lt;option&gt;Two&lt;/option&gt;
 &lt;option&gt;Three&lt;/option&gt;
 &lt;/select&gt;
 
-&lt;input type="file" class="corporate-ui"/&gt;
-&lt;input type="radio" name="number" value="1" class="corporate-ui"/&gt;
-&lt;input type="radio" name="number" value="2" checked="checked" class="corporate-ui"/&gt;
-&lt;input type="checkbox" name="number" value="1" class="corporate-ui"/&gt;</pre></li>
-	<li>Now, you have to initiate the Uniform plugin. We did this within the document ready function and had it apply to every select on the page, every file input, and any input with a class of corporate-ui. See below:
-	<pre class="html">$('select, input:file, input.corporate-ui').uniform();</pre></li>
+&lt;input type="file" class="bov-ui"/&gt;
+&lt;input type="radio" name="number" value="1" class="bov-ui"/&gt;
+&lt;input type="radio" name="number" value="2" checked="checked" class="bov-ui"/&gt;
+&lt;input type="checkbox" name="number" value="1" class="bov-ui"/&gt;</pre></li>
+	<li>Now, you have to initiate the Uniform plugin. We did this within the document ready function and had it apply to every select on the page, every file input, and any input with a class of bov-ui. See below:
+	<pre class="html">$('select, input:file, input.bov-ui').uniform();</pre></li>
 	</ol>
 	</div>
 	<h3 id="docs-quantity">Quantity Input</h3>
@@ -506,20 +506,20 @@ $(thisSlider).slider({
 	<li>Make sure you're linking to jQuery:
 	<pre class="html">&lt;script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js'&gt;&lt;/script&gt;</pre></li>
 	<li>Add the HTML:
-	<pre class="html">&lt;fieldset class="corporate-ui-value"&gt;
+	<pre class="html">&lt;fieldset class="bov-ui-value"&gt;
 		&lt;input type="text" value="1" /&gt;
-		&lt;span class="value-inc" onclick="increaseValue('.corporate-ui-value');"&gt;&lt;/span&gt;
-		&lt;span class="value-dec" onclick="decreaseValue('.corporate-ui-value');"&gt;&lt;/span&gt;
+		&lt;span class="value-inc" onclick="increaseValue('.bov-ui-value');"&gt;&lt;/span&gt;
+		&lt;span class="value-dec" onclick="decreaseValue('.bov-ui-value');"&gt;&lt;/span&gt;
 	&lt;/fieldset&gt;</pre></li>
 	<li>Add the CSS:
 	<pre class="css">/* Quantity Input */
-.corporate-ui-value {position: relative;width: 50px;}
-.corporate-ui-value input{border-style: none; width: 30px;padding: 3px 0px 3px 10px;height: 20px;background: url(../images/corporate-ui-sprite2.png) -415px -178px;position: relative;font: bold 13px/24px Arial, Helvetica, Geneva, sans-serif;color: #908964;text-shadow: #fff 0 2px 0;}
-.corporate-ui-value input:hover {background-position: -415px -211px;}
-.corporate-ui-value span {display: block; position: absolute;cursor: pointer;height: 13px;width: 14px;top: 0px;right: 0px;background: url(../images/corporate-ui-sprite2.png) -547px -178px;}
-.corporate-ui-value span.value-inc:hover {background-position: -547px -211px;}
-.corporate-ui-value span.value-dec {top: 13px;background-position: -547px -191px;}
-.corporate-ui-value span.value-dec:hover {background-position: -547px -224px;}</pre></li>
+.bov-ui-value {position: relative;width: 50px;}
+.bov-ui-value input{border-style: none; width: 30px;padding: 3px 0px 3px 10px;height: 20px;background: url(../images/bov-ui-sprite2.png) -415px -178px;position: relative;font: bold 13px/24px Arial, Helvetica, Geneva, sans-serif;color: #908964;text-shadow: #fff 0 2px 0;}
+.bov-ui-value input:hover {background-position: -415px -211px;}
+.bov-ui-value span {display: block; position: absolute;cursor: pointer;height: 13px;width: 14px;top: 0px;right: 0px;background: url(../images/bov-ui-sprite2.png) -547px -178px;}
+.bov-ui-value span.value-inc:hover {background-position: -547px -211px;}
+.bov-ui-value span.value-dec {top: 13px;background-position: -547px -191px;}
+.bov-ui-value span.value-dec:hover {background-position: -547px -224px;}</pre></li>
 	<li>Enable the two spans to increase and decrease. Add the following javascript to the head section of your page or within your javascript functions document. It does not need to go inside the document ready function.
 	<pre class="html">var increaseValue = function (itemId) {
 	var initialValue = $(itemId).find('input').attr('value');
@@ -545,11 +545,11 @@ var decreaseValue = function (itemId) {
 	<li>Add the following CSS to your CSS file or section:
 	<pre class="css">/* On/Off Switch */
 .onoffswitch {width: 67px; height: 27px;position: relative;overflow: hidden; display: block;cursor: pointer;}
-.onoffswitch .background {width: 145px; height: 27px;display: block;position: absolute; top: 0; left: 0;background: url(../images/corporate-ui-sprite.png) -414px -831px; z-index: 1;}
+.onoffswitch .background {width: 145px; height: 27px;display: block;position: absolute; top: 0; left: 0;background: url(../images/bov-ui-sprite.png) -414px -831px; z-index: 1;}
 
 /* Left/Right Switch */
 .leftrightswitch {width: 32px; height: 17px;position: relative;overflow: hidden; display: block;cursor: pointer;}
-.leftrightswitch .background {width: 72px; height: 17px;display: block;position: absolute; top: 0; left: 0;background: url(../images/corporate-ui-sprite.png) -424px -811px; z-index: 1;}
+.leftrightswitch .background {width: 72px; height: 17px;display: block;position: absolute; top: 0; left: 0;background: url(../images/bov-ui-sprite.png) -424px -811px; z-index: 1;}
 </pre></li>
 	<li>Next you'll want to tell jQuery what to do with that HTML. For the on/off switch, add this to your document ready function:
 	<pre class="html">// Iterate over checkboxes
@@ -618,17 +618,17 @@ $("span.leftrightswitch").click(function() {
 	<p>The Search Box is simple HTML and CSS.</p>
 	<ol>
 	<li>Grab the HTML:
-	<pre class="html">&lt;fieldset class="corporate-ui-search"&gt;
+	<pre class="html">&lt;fieldset class="bov-ui-search"&gt;
 	&lt;input type="text" value="Search box" name="keywords" onblur="if (this.value == ''){this.value = 'Search box';}" onfocus="if (this.value == 'Search box') {this.value = '';}"/&gt;
 	&lt;input type="submit" value="" class="submit" /&gt;
 &lt;/fieldset&gt;</pre></li>
 	<li>Add the CSS:
 <pre class="css">/* Stand-Alone Search Box */
-.corporate-ui-search {width: 300px;height: 38px;background: url(../images/corporate-ui-sprite2.png) -0 -173px; position: relative;}
-.corporate-ui-search:hover, .corporate-ui-search:active {background-position: 0 -212px;}
-.corporate-ui-search input {float: left;display: block;height: 20px; width: 245px;margin: 7px 5px; padding-left: 10px;border-style: none;background-color: transparent;font: bold 13px/24px Arial, Helvetica, Geneva, sans-serif;color: #908964;text-shadow: #fff 0 2px 0;}
-.corporate-ui-search input.submit {height: 27px; width: 30px;margin: 5px;position: absolute;right: 0;top: 0;background: url(../images/corporate-ui-sprite2.png) -304px -178px;}
-.corporate-ui-search input.submit:hover {cursor: pointer; background-position: -338px -178px;}</pre></li>
+.bov-ui-search {width: 300px;height: 38px;background: url(../images/bov-ui-sprite2.png) -0 -173px; position: relative;}
+.bov-ui-search:hover, .bov-ui-search:active {background-position: 0 -212px;}
+.bov-ui-search input {float: left;display: block;height: 20px; width: 245px;margin: 7px 5px; padding-left: 10px;border-style: none;background-color: transparent;font: bold 13px/24px Arial, Helvetica, Geneva, sans-serif;color: #908964;text-shadow: #fff 0 2px 0;}
+.bov-ui-search input.submit {height: 27px; width: 30px;margin: 5px;position: absolute;right: 0;top: 0;background: url(../images/bov-ui-sprite2.png) -304px -178px;}
+.bov-ui-search input.submit:hover {cursor: pointer; background-position: -338px -178px;}</pre></li>
 	</ol>
 	</div>
 	<h3 id="docs-breadcrumb">Breadcrumb</h3>
@@ -647,7 +647,7 @@ $("span.leftrightswitch").click(function() {
 	<li>The CSS:
 	<pre class="css">/* Breadcrumbs */
 .breadcrumb ul {list-style-type: none;margin: 0px;padding: 0px;}
-.breadcrumb ul li {display: block; float: left; padding: 5px 12px 5px 22px;background: url(../images/corporate-ui-sprite2.png) left  -288px;margin-right: 0px;height: 18px;font: bold 12px/17px Arial, Helvetica, Geneva, sans-serif;text-shadow: #c2d6d9 0 1px 0;}
+.breadcrumb ul li {display: block; float: left; padding: 5px 12px 5px 22px;background: url(../images/bov-ui-sprite2.png) left  -288px;margin-right: 0px;height: 18px;font: bold 12px/17px Arial, Helvetica, Geneva, sans-serif;text-shadow: #c2d6d9 0 1px 0;}
 .breadcrumb ul li.active {background-position: left -258px;border-radius:0px 3px 3px 0px; -moz-border-radius:0px 3px 3px 0px; -khtml-border-radius:0px 3px 3px 0px; -webkit-border-radius:0px 3px 3px 0px;text-shadow: #fff 0 1px 0;border-right: 1px solid #e4e4e4;}
 .breadcrumb ul li.home {background-position: -337px -211px; width: 29px;height: 28px;padding: 0px;}
 .breadcrumb ul li.home a {display: block;width: 29px;height: 28px;}
@@ -680,7 +680,7 @@ $("span.leftrightswitch").click(function() {
 	<li>Add the CSS:
 	<pre class="css">/* Dark Numbered Progress Tracker */
 .step-bar.grey {width: 465px;height: 50px;}
-.step-bar.grey ol li{width: 127px; height: 50px;display: block;float: left;background: url(../images/corporate-ui-sprite2.png) -177px -319px;padding-right: 10px;text-align: right;color: #666;text-shadow: #fff 0 1px 0;font: bold 18px/50px Arial, Helvetica, Geneva, sans-serif;}
+.step-bar.grey ol li{width: 127px; height: 50px;display: block;float: left;background: url(../images/bov-ui-sprite2.png) -177px -319px;padding-right: 10px;text-align: right;color: #666;text-shadow: #fff 0 1px 0;font: bold 18px/50px Arial, Helvetica, Geneva, sans-serif;}
 .step-bar.grey ol li.active {
 background-position: -177px -370px;color: #fff;text-shadow: #919292 0 1px 0;}
 .step-bar.grey ol li.first{width: 30px;background-position: left -319px;padding-right: 11px;}
@@ -690,7 +690,7 @@ background-position: -177px -370px;color: #fff;text-shadow: #919292 0 1px 0;}
 
 /* Blue Numbered Progress Tracker */
 .step-bar.blue {width: 465px;height: 50px;}
-.step-bar.blue ol li{width: 127px; height: 50px;display: block;float: left;background: url(../images/corporate-ui-sprite2.png) -177px -319px;padding-right: 10px;text-align: right;color: #666;text-shadow: #fff 0 1px 0;font: bold 18px/50px Arial, Helvetica, Geneva, sans-serif;}
+.step-bar.blue ol li{width: 127px; height: 50px;display: block;float: left;background: url(../images/bov-ui-sprite2.png) -177px -319px;padding-right: 10px;text-align: right;color: #666;text-shadow: #fff 0 1px 0;font: bold 18px/50px Arial, Helvetica, Geneva, sans-serif;}
 .step-bar.blue ol li.active {
 background-position: -177px -421px;color: #fff;text-shadow: #919292 0 1px 0;}
 .step-bar.blue ol li.first{width: 30px;background-position: left -319px;padding-right: 11px;}
@@ -715,9 +715,9 @@ background-position: -177px -421px;color: #fff;text-shadow: #919292 0 1px 0;}
 	<pre class="css">/* Login Form */
 .login {width: 265px;background-color: #fff;border: 1px solid #d7d7d7;padding: 20px;border-radius:5px;box-shadow:#d4d3d3 01px 1px 1px;}
 .login h4 {font: bold 19px Arial, Helvetica, Geneva, sans-serif;color: #666666;text-shadow: #fffeff 0 1px 0;text-align: center;padding-bottom: 10px;margin-bottom: 10px;border-bottom: 1px solid #e4e4e4;}
-.login input {border-style: none; margin: 7px 0px; padding: 5px 40px 5px 10px;float: left;width: 217px;height: 27px;background: url(../images/corporate-ui-sprite3.png) left 0;font: bold 13px/150% Arial, Helvetica, Geneva, sans-serif;color: #908964;text-shadow: #fff 0 2px 0;}
+.login input {border-style: none; margin: 7px 0px; padding: 5px 40px 5px 10px;float: left;width: 217px;height: 27px;background: url(../images/bov-ui-sprite3.png) left 0;font: bold 13px/150% Arial, Helvetica, Geneva, sans-serif;color: #908964;text-shadow: #fff 0 2px 0;}
 .login input:active, .login input:hover {background-position: right 0;}
-.login input.password {background: url(../images/corporate-ui-sprite3.png) left -40px;border-style: none;padding: 5px 40px 5px 10px;}
+.login input.password {background: url(../images/bov-ui-sprite3.png) left -40px;border-style: none;padding: 5px 40px 5px 10px;}
 .login input.password:active, .login input.password:hover {background-position: right -40px;}
 .login input.submit {background-position: left -80px; width: 267px; height: 38px; padding: 0px;font: bold 13px Arial, Helvetica, Geneva, sans-serif;color: #fff;text-shadow: #002e67 0 1px 0;}
 .login input.submit:active, .login input.submit:hover {background-position: right -80px;cursor: pointer;}
@@ -760,34 +760,34 @@ background-position: -177px -421px;color: #fff;text-shadow: #919292 0 1px 0;}
 &lt;/div&gt;</pre></li>
 	<li>Add the CSS for your star style:
 	<pre class="css">/* Default Large Gold Stars */
-.gold-stars {width: 150px; height: 26px;background: url(../images/corporate-ui-sprite3.png) 0px -127px;}
+.gold-stars {width: 150px; height: 26px;background: url(../images/bov-ui-sprite3.png) 0px -127px;}
 .gold-stars:hover {cursor: pointer;}
-.gold-stars span.status {display: block; width: 40%; height:26px;background: url(../images/corporate-ui-sprite3.png) 0px -221px;}
+.gold-stars span.status {display: block; width: 40%; height:26px;background: url(../images/bov-ui-sprite3.png) 0px -221px;}
 
 /* Small Gold Stars */
-.small-gold-stars {width: 75px; height: 14px;background: url(../images/corporate-ui-sprite3.png) -158px -130px;}
+.small-gold-stars {width: 75px; height: 14px;background: url(../images/bov-ui-sprite3.png) -158px -130px;}
 .small-gold-stars:hover {cursor: pointer;}
-.small-gold-stars span.status {display: block; width: 40%; height:14px;background: url(../images/corporate-ui-sprite3.png) -158px -179px;}
+.small-gold-stars span.status {display: block; width: 40%; height:14px;background: url(../images/bov-ui-sprite3.png) -158px -179px;}
 
 /* Large Grey Stars */
-.dark-stars {width: 150px; height: 26px;background: url(../images/corporate-ui-sprite3.png) 0px -127px;}
+.dark-stars {width: 150px; height: 26px;background: url(../images/bov-ui-sprite3.png) 0px -127px;}
 .dark-stars:hover {cursor: pointer;}
-.dark-stars span.status {display: block; width: 40%; height:26px;background: url(../images/corporate-ui-sprite3.png) 0px -190px;}
+.dark-stars span.status {display: block; width: 40%; height:26px;background: url(../images/bov-ui-sprite3.png) 0px -190px;}
 
 /* Small Grey Stars */
-.small-dark-stars {width: 75px; height: 14px;background: url(../images/corporate-ui-sprite3.png) -158px -130px;}
+.small-dark-stars {width: 75px; height: 14px;background: url(../images/bov-ui-sprite3.png) -158px -130px;}
 .small-dark-stars:hover {cursor: pointer;}
-.small-dark-stars span.status {display: block; width: 40%; height:14px;background: url(../images/corporate-ui-sprite3.png) -158px -164px;}
+.small-dark-stars span.status {display: block; width: 40%; height:14px;background: url(../images/bov-ui-sprite3.png) -158px -164px;}
 
 /* Large Blue Stars */
-.blue-stars {width: 150px; height: 26px;background: url(../images/corporate-ui-sprite3.png) 0px -127px;}
+.blue-stars {width: 150px; height: 26px;background: url(../images/bov-ui-sprite3.png) 0px -127px;}
 .blue-stars:hover {cursor: pointer;}
-.blue-stars span.status {display: block; width: 40%; height:26px;background: url(../images/corporate-ui-sprite3.png) 0px -158px;}
+.blue-stars span.status {display: block; width: 40%; height:26px;background: url(../images/bov-ui-sprite3.png) 0px -158px;}
 
 /* Small blue Stars */
-.small-blue-stars {width: 75px; height: 14px;background: url(../images/corporate-ui-sprite3.png) -158px -130px;}
+.small-blue-stars {width: 75px; height: 14px;background: url(../images/bov-ui-sprite3.png) -158px -130px;}
 .small-blue-stars:hover {cursor: pointer;}
-.small-blue-stars span.status {display: block; width: 40%; height:14px;background: url(../images/corporate-ui-sprite3.png) -158px -147px;}</pre></li>
+.small-blue-stars span.status {display: block; width: 40%; height:14px;background: url(../images/bov-ui-sprite3.png) -158px -147px;}</pre></li>
 	<li>Add the jQuery interaction inside your document ready function:
 	<pre class="html">$('.star-rating').click(function(e) {
 	var maxWidth = $(this).width();
@@ -815,11 +815,11 @@ background-position: -177px -421px;color: #fff;text-shadow: #919292 0 1px 0;}
 	<pre class="css">/* Newsletter Form */
 .newsletter {width: 400px;background-color: #fff;border: 1px solid #d7d7d7;padding: 20px;border-radius:5px;box-shadow:#d4d3d3 01px 1px 1px;position: relative;}
 .newsletter h4 {font: bold 19px Arial, Helvetica, Geneva, sans-serif;color: #666666;text-shadow: #fffeff 0 1px 0;padding-bottom: 10px;margin-bottom: 10px;border-bottom: 1px solid #e4e4e4;}
-.newsletter input {border: none;width: 266px; height: 27px;background: url(../images/corporate-ui-sprite3.png) -273px -130px;padding:  5px 10px;float: left;font: bold 13px Arial, Helvetica, Geneva, sans-serif;color: #908964;text-shadow: #fff 0 2px 0;}
+.newsletter input {border: none;width: 266px; height: 27px;background: url(../images/bov-ui-sprite3.png) -273px -130px;padding:  5px 10px;float: left;font: bold 13px Arial, Helvetica, Geneva, sans-serif;color: #908964;text-shadow: #fff 0 2px 0;}
 .newsletter input:active, .newsletter input:hover {background-position:-273px -172px;}
 .newsletter input.submit {width: 102px; height: 37px; background-position: -273px -218px; margin-left: 12px;color: #fff;text-shadow: #002e67 0 1px 0;}
 .newsletter input.submit:active, .newsletter input.submit:hover {background-position: -457px -218px; cursor: pointer;}
-.newsletter span.close {position: absolute;top: -15px;right: -15px;width: 32px;height: 32px;background: url(../images/corporate-ui-sprite3.png) -399px -218px;}
+.newsletter span.close {position: absolute;top: -15px;right: -15px;width: 32px;height: 32px;background: url(../images/bov-ui-sprite3.png) -399px -218px;}
 .newsletter span.close:hover {cursor: pointer;}</pre></li>
 	<li>Add the jQuery functionality to your document ready function:
 	<pre class="html">$('.newsletter span.close').click(function(){
@@ -839,12 +839,12 @@ background-position: -177px -421px;color: #fff;text-shadow: #919292 0 1px 0;}
 &lt;/div&gt;</pre></li>
 	<li>Here's the CSS:
 	<pre class="css">/* Media Controls */
-.play-controls a.back, .play-controls a.next {margin: 7px 0px; display: block;float: left; width: 38px;height: 42px;background: url(../images/corporate-ui-sprite3.png) -1px -259px;}
+.play-controls a.back, .play-controls a.next {margin: 7px 0px; display: block;float: left; width: 38px;height: 42px;background: url(../images/bov-ui-sprite3.png) -1px -259px;}
 .play-controls a.back{background-position: -1px -259px;}
 .play-controls a.back:hover{background-position: -134px -259px;}
 .play-controls a.next {background-position: -89px -259px;}
 .play-controls a.next:hover {background-position: -222px -259px;}
-.play-controls a.play {margin: 0px; display:block; float: left; width: 50px; height: 55px;background: url(../images/corporate-ui-sprite3.png) -40px -253px;}
+.play-controls a.play {margin: 0px; display:block; float: left; width: 50px; height: 55px;background: url(../images/bov-ui-sprite3.png) -40px -253px;}
 .play-controls a.play:hover {background-position: -173px -253px;}
 </pre></li>
 	</ol>
@@ -870,7 +870,7 @@ background-position: -177px -421px;color: #fff;text-shadow: #919292 0 1px 0;}
 &lt;a href="#" class="icon-button"&gt;&lt;img src="images/icons/plus.png" /&gt;&lt;/a&gt;</pre></li>
 	<li>Add the CSS:
 	<pre class="css">/* Icon Buttons */
-a.icon-button {display: block; float: left; width: 34px;height: 34px;background: url(../images/corporate-ui-sprite3.png) right -264px;}
+a.icon-button {display: block; float: left; width: 34px;height: 34px;background: url(../images/bov-ui-sprite3.png) right -264px;}
 a.icon-button:hover {background-position: -488px -264px;}</pre></li>
 	</div>
 </div>		

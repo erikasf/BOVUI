@@ -92,7 +92,7 @@ $(document).ready(function() {
     });
     
 	    
-	$('select, input:file, input.corporate-ui').uniform();
+	$('select, input:file, input.bov-ui').uniform();
 	//$('.star-rating').slider();
 	// Need this - one for each slider - fill in var thisSlider with id of slider div
 	var thisSlider = '#slider1';
